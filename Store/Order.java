@@ -11,10 +11,11 @@ import java.util.*;
 * INSTANCE FIELDS *
 ******************/
 class Order {
+    static ArrayList<Item> menu = new ArrayList<Item>();
     String name;
     Double total = 0.00;
     boolean ready;
-    List<Item> items;
+    ArrayList<Item> items;
 
     /*********************
     * CONSTRUCTOR METHOD *
@@ -66,6 +67,12 @@ class Order {
     *****************/
     static String capitalize(String e){
         return e.substring(0,1).toUpperCase() + e.substring(1);
+    }
+
+    static void seeMenu(){
+        System.out.println("-----------MENU----------");
+        for (Item i : menu) System.out.printf("%s -- $%.2f\n", i.name, i.price);
+        System.out.println("-------------------------");
     }
 
     /******************
