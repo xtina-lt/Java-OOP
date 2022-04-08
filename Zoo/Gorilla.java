@@ -10,7 +10,7 @@ public class Gorilla extends Mammal {
         int energy = getEnergy();
         System.out.println(energy);
         int e = ((energy - 5) >= 0) ? energy - 5 : 0;
-        String status = (energy != e) ? "Throwing things!" : "Not enough Energy";
+        String status = (energy != (energy - e)) ? "Throwing things!" : "Not enough Energy";
         System.out.println(status);
         return setEnergy(e);
     }
@@ -18,7 +18,7 @@ public class Gorilla extends Mammal {
     int climb(){
         int energy = getEnergy();
         int e = ((energy - 10) >= 0) ? (-10) : 0;
-        String status = (energy != e) ? "Climbin that tree!" : "Not enough Energy";
+        String status = (energy != (energy - e)) ? "Climbin that tree!" : "Not enough Energy";
         System.out.println(status);
         return setEnergy(e);
     }

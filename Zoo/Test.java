@@ -2,6 +2,9 @@ package Zoo;
 
 class Test {
     public static void main(String[] args){
+        /**********
+        *  HUMAN  *
+        **********/
         //Human h = new Human();
         // // superclass methods
         // h.regulateTemp();
@@ -9,8 +12,22 @@ class Test {
         // //subclass methods
         // h.goToWork();
         // h.isSleeping();
-        Gorilla g  = new Gorilla();
-        g.climb();
-        g.showEnergy();
+
+        /**********
+        * GORILLA *
+        **********/
+        // Gorilla g  = new Gorilla();
+        // g.climb();
+        // g.showEnergy();
+
+        /**********
+        *   BAT   *
+        **********/
+        Bat b = new Bat();
+        b.attackTown();
+        b.attackTown();
+        b.attackTown();
+        b.attackTown();
+        b.showEnergy();
     }
 }
