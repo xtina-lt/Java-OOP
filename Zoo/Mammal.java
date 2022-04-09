@@ -24,13 +24,13 @@ abstract class Mammal {
 
     //SETTERS
     void startSleeping(){
-        sleeping = true;
-        energy = 100;
+        this.sleeping = true;
+        this.energy = 100;
         System.out.println("zZzZ");
     }
 
     int setEnergy(int e){
-        return energy += e;
+        return this.energy += e;
     }
 
 }
