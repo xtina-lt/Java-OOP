@@ -30,4 +30,5 @@ class Test {
         b.attackTown();
         b.showEnergy();
     }
+    
 }
