@@ -1,6 +1,6 @@
 package Zoo;
 
-class Mammal {
+abstract class Mammal {
     private boolean sleeping = false;
     private int energy = 100;
     // private variables need getters and setters to be seen

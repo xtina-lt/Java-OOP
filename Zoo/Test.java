@@ -29,6 +29,11 @@ class Test {
         b.attackTown();
         b.attackTown();
         b.showEnergy();
+
+        //Mammal test = new Mammal();
+        // cannot instatntiate becuase it is abstract
+        // don't want a random mammal weird thing
+        // only want subclasses of mammals
     }
     
 }
