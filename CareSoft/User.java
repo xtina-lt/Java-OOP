@@ -1,6 +1,6 @@
 package CareSoft;
 
-public class User {
+abstract public class User {
     protected Integer id;
     protected int pin;
 
